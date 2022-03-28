@@ -1,4 +1,11 @@
-public class HomeWork1 {
+/**
+ * Java 1. Homework 1
+ *
+ * @author Roman Chovgun
+ * @version 28.03.2022
+ */
+
+class HomeWork1 {
     public static void main(String args[]) {
         printThreeWords();
         checkSumSign();
@@ -15,18 +22,14 @@ public class HomeWork1 {
     static void checkSumSign() {
         int a = 2;
         int b = -3;
-        if (a + b >= 0) {
-            System.out.println("Сумма положительная");
-        } else {
-            System.out.println("Сумма отрицательная");
-        }
+        System.out.println(a+b >=0? "Positive" : "Negative");
     }
 
     static void printColor() {
         int value = 101;
         if (value <= 0) {
             System.out.println("Красный");
-        } else if (0 < value && value <= 100) {
+        } else if (value <= 100) {
             System.out.println("Желтый");
         } else {
             System.out.println("Зеленый");
@@ -36,10 +39,6 @@ public class HomeWork1 {
     static void compareNumbers() {
         int a = 2;
         int b = 1;
-        if (a>=b){
-            System.out.println("a>=b");
-        } else {
-            System.out.println("a<b");
-        }
+        System.out.println(a >= b? "a>=b" : "a<b");
     }
 }
